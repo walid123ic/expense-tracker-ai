@@ -3,12 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Plus, Wallet, LayoutDashboard, ListTree } from "lucide-react";
+import { Plus, Wallet, LayoutDashboard, ListTree, CloudUpload } from "lucide-react";
 import { ExpenseFormModal } from "@/components/expenses/ExpenseFormModal";
 
 const NAV_LINKS = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/expenses", label: "Expenses", icon: ListTree },
+  { href: "/export", label: "Export", icon: CloudUpload },
 ];
 
 export function Header() {
